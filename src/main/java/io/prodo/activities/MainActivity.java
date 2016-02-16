@@ -1,7 +1,9 @@
-package io.prodo;
+package io.prodo.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import io.prodo.R;
 
 public class MainActivity extends AppCompatActivity {
 
