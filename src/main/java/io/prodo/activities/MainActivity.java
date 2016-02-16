@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import io.prodo.R;
+import io.prodo.adapters.StatusAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +15,15 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		ListView listView = (ListView) findViewById(R.id.listView);
+
+		StatusAdapter adapter = new StatusAdapter(this);
+
+		listView.setAdapter(adapter);
+
+		listView.setEnabled(false);
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
