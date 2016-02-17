@@ -2,4 +2,13 @@
 	<string name="app_name">Prodo</string>
 	<string name="action_settings">Settings</string>
 	<string name="status">Status</string>
+	<string name="server">Server</string>
+	<string name="server_address">Address</string>
+	<string name="server_address_default">prodo.herokuapp.com</string>
+	<string name="server_port">Port</string>
+	<string name="server_port_default">80</string>
+	<string name="server_ssl">Use SSL</string>
+	<string name="messages">Messages</string>
+	<string name="messages_mark_as_read_after_upload">Mark as read after upload</string>
+	<string name="messages_delete_after_upload">Delete after upload</string>
 </resources>

@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/server">
+
+		<EditTextPreference
+			android:id="@+id/serverAddress"
+			android:defaultValue="@string/server_address_default"
+			android:inputType="textUri"
+			android:key="server_address"
+			android:title="@string/server_address" />
+
+		<EditTextPreference
+			android:id="@+id/serverPort"
+			android:defaultValue="@string/server_port_default"
+			android:inputType="number"
+			android:key="server_port"
+			android:title="@string/server_port" />
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="server_ssl"
+			android:title="@string/server_ssl" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/messages">
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="messages_mark_as_read_after_upload"
+			android:title="@string/messages_mark_as_read_after_upload" />
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="messages_delete_after_upload"
+			android:title="@string/messages_delete_after_upload" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
