@@ -1,25 +1,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<PreferenceCategory android:title="@string/server">
+	<PreferenceCategory android:title="@string/api">
 
 		<EditTextPreference
-			android:id="@+id/serverAddress"
-			android:defaultValue="@string/server_address_default"
+			android:id="@+id/apiEndpoint"
+			android:defaultValue="@string/api_endpoint_default"
 			android:inputType="textUri"
-			android:key="server_address"
-			android:title="@string/server_address" />
+			android:key="api_endpoint"
+			android:title="@string/api_endpoint" />
 
 		<EditTextPreference
-			android:id="@+id/serverPort"
-			android:defaultValue="@string/server_port_default"
-			android:inputType="number"
-			android:key="server_port"
-			android:title="@string/server_port" />
+			android:id="@+id/apiToken"
+			android:inputType="text"
 
-		<CheckBoxPreference
-			android:defaultValue="true"
-			android:key="server_ssl"
-			android:title="@string/server_ssl" />
+			android:key="api_token"
+			android:title="@string/api_token" />
 
 	</PreferenceCategory>
 

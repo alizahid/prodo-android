@@ -35,8 +35,8 @@ public class SettingsActivity extends AppCompatActivity {
 
 	public static class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-		private static final String SERVER_ADDRESS = "server_address";
-		private static final String SERVER_PORT = "server_port";
+		private static final String API_ENDPOINT = "api_endpoint";
+		private static final String API_TOKEN = "api_token";
 
 		private SharedPreferences preferences;
 
@@ -47,8 +47,8 @@ public class SettingsActivity extends AppCompatActivity {
 
 			preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
 
-			findPreference(SERVER_ADDRESS).setSummary(preferences.getString(SERVER_ADDRESS, null));
-			findPreference(SERVER_PORT).setSummary(preferences.getString(SERVER_PORT, null));
+			findPreference(API_ENDPOINT).setSummary(preferences.getString(API_ENDPOINT, null));
+			findPreference(API_TOKEN).setSummary(preferences.getString(API_TOKEN, getString(R.string.no_token)));
 		}
 
 		@Override
